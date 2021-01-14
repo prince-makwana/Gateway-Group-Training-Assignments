@@ -1,0 +1,9 @@
+This WebApi Projects needs authorization to authenticate. Without authorization, WebApi will give 401 Error Code.
+
+The Authentication used in this project is static authentication.
+
+To authenticate the WebApi, provide BasicAuth in Headers during HTTP request. The username and password can be anything.
+
+For Example:
+username: abcd
+password: 123456

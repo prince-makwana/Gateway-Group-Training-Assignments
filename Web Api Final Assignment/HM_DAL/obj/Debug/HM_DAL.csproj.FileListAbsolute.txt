@@ -1,0 +1,16 @@
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\HM_DAL.dll.config
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\HM_DAL.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\HM_DAL.pdb
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\AutoMapper.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\EntityFramework.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\HM_Model.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\HM_Model.pdb
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\AutoMapper.xml
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\EntityFramework.xml
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.csprojAssemblyReference.cache
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.csproj.CoreCompileInputs.cache
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.csproj.CopyComplete
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.dll
+C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.pdb

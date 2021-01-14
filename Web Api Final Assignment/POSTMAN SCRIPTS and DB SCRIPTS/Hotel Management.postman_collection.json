@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "629af2d1-ab53-4ba2-a2a2-cb572c9b80d8",
+		"name": "Hotel Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44348/api/HotelManager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/GetHotels",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"GetHotels"
+					]
+				},
+				"description": "To Get All hotels in List"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/GetHotelById/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"GetHotelById",
+						"2"
+					]
+				},
+				"description": "To get the details of particular hotel"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/createHotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hotelName\": \"Sunshine Hotel\",\r\n    \"address\": \"Oppo. Sabarmati River\",\r\n    \"city\": \"Ahmedabad\",\r\n    \"pincode\": \"320233\",\r\n    \"contactNumber\": \"6787245637\",\r\n    \"contactPerson\": \"Admin\",\r\n    \"website\": \"www.sunshinehotel.com\",\r\n    \"facebook\": \"\",\r\n    \"Twitter\": \"\",\r\n    \"isActive\": \"1\",\r\n    \"createDate\":\"\",\r\n    \"createdBy\": \"Admin\",\r\n    \"updateDate\":\"\",\r\n    \"updatedBy\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/createHotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"createHotel"
+					]
+				},
+				"description": "To Create Hotel"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/createRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hotelId\": \"4\",\r\n    \"roomName\": \"AC Delux Room\",\r\n    \"Category\": \"Category 3\",\r\n    \"price\": \"4000\",\r\n    \"isActive\": \"\",\r\n    \"createdDate\": \"\",\r\n    \"createdBy\": \"\",\r\n    \"updateDate\": \"\",\r\n    \"updatedBy\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/createRoom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"createRoom"
+					]
+				},
+				"description": "To Create Room"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/BookRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingId\": \"4\",\r\n    \"hotelId\": \"3\",\r\n    \"roomId\": \"2\",\r\n    \"statusOfBooking\": \"Confirmation Pending\",\r\n    \"bookingDate\": \"2020-01-10\",\r\n    \"isActive\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/BookRoom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"BookRoom"
+					]
+				},
+				"description": "To Book a Room"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/UpdateBookingDate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingId\": \"4\",\r\n    \"hotelId\": \"3\",\r\n    \"roomId\": \"2\",\r\n    \"statusOfBooking\": \"Confirmation Pending\",\r\n    \"bookingDate\": \"2020-01-14\",\r\n    \"isActive\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/UpdateBookingDate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"UpdateBookingDate"
+					]
+				},
+				"description": "To Update Booking Date"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/UpdateBookingStatus",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingId\": \"4\",\r\n    \"hotelId\": \"3\",\r\n    \"roomId\": \"2\",\r\n    \"statusOfBooking\": \"Booking Confirmed\",\r\n    \"bookingDate\": \"2020-01-10\",\r\n    \"isActive\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/UpdateBookingStatus",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"UpdateBookingStatus"
+					]
+				},
+				"description": "To Update Status of Booking"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/DeleteBooking/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/DeleteBooking/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"DeleteBooking",
+						"2"
+					]
+				},
+				"description": "To Delete Booking"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/checkAvailability",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingId\": \"4\",\r\n    \"hotelId\": \"3\",\r\n    \"roomId\": \"2\",\r\n    \"statusOfBooking\": \"Checking Availability\",\r\n    \"bookingDate\": \"2020-14-01\",\r\n    \"isActive\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/checkAvailability",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"checkAvailability"
+					]
+				},
+				"description": "To check Status of Booking availability"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44348/api/HotelManager/getRoomsByParameters",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"Bhuj\",\r\n    \"pincode\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44348/api/HotelManager/getRoomsByParameters",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44348",
+					"path": [
+						"api",
+						"HotelManager",
+						"getRoomsByParameters"
+					]
+				},
+				"description": "To Get Room By Parameters"
+			},
+			"response": []
+		}
+	]
+}
