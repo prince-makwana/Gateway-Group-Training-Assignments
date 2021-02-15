@@ -1,0 +1,5 @@
+C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\bin\Debug\PMS.Model.dll
+C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\bin\Debug\PMS.Model.pdb
+C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.dll
+C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.pdb

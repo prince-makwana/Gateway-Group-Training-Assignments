@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+@if(Request.IsAuthenticated)
+{
+    <h4>Welcome @Session["Name"]</h4>
+}
+
