@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ServiceBookingDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAppointments">
+          <Key>
+            <PropertyRef Name="AppintmentId" />
+          </Key>
+          <Property Name="AppintmentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ServiceId" Type="int" Nullable="false" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="BookingDateTime" Type="datetime" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCustomers">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="200" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ContactNo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="OtherNo" Type="nvarchar" MaxLength="15" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Note" Type="nvarchar" MaxLength="200" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblDealers">
+          <Key>
+            <PropertyRef Name="DealerId" />
+          </Key>
+          <Property Name="DealerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DealerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="200" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ContactNo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblJobCards">
+          <Key>
+            <PropertyRef Name="JobCardId" />
+          </Key>
+          <Property Name="JobCardId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MechanicId" Type="int" Nullable="false" />
+          <Property Name="AppointmentId" Type="int" Nullable="false" />
+          <Property Name="TotalPrice" Type="float" Nullable="false" />
+          <Property Name="StartDateTime" Type="datetime" Nullable="false" />
+          <Property Name="EndDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="Note" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="tblMechanics">
+          <Key>
+            <PropertyRef Name="MechanicId" />
+          </Key>
+          <Property Name="MechanicId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MechanicName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ContactNo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Make" Type="nvarchar" MaxLength="40" />
+          <Property Name="EmailId" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="isActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRecords">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="DealerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="DealerContactNo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="MechanicName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MechanicContactNo" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="ServiceName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="StartDateTime" Type="datetime" Nullable="false" />
+          <Property Name="EndDateTime" Type="datetime" Nullable="false" />
+          <Property Name="TotalPrice" Type="float" Nullable="false" />
+          <Property Name="LicensePlate" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblServices">
+          <Key>
+            <PropertyRef Name="ServiceId" />
+          </Key>
+          <Property Name="ServiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ServiceName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="DealerId" Type="int" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="FixPrice" Type="float" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblVehicles">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Make" Type="nvarchar" MaxLength="40" />
+          <Property Name="Model" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="RegistrationDate" Type="date" Nullable="false" />
+          <Property Name="ChassisNo" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Colour" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="MeterValue" Type="float" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="100" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblAppointments_tblCustomers">
+          <End Role="tblCustomers" Type="Self.tblCustomers" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointments" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblCustomers">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAppointments_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealers" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointments" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAppointments_tblServices">
+          <End Role="tblServices" Type="Self.tblServices" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointments" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblServices">
+              <PropertyRef Name="ServiceId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblJobCards_tblAppointments">
+          <End Role="tblAppointments" Type="Self.tblAppointments" Multiplicity="1" />
+          <End Role="tblJobCards" Type="Self.tblJobCards" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Principal>
+            <Dependent Role="tblJobCards">
+              <PropertyRef Name="AppointmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblJobCards_tblMechanics">
+          <End Role="tblMechanics" Type="Self.tblMechanics" Multiplicity="1" />
+          <End Role="tblJobCards" Type="Self.tblJobCards" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMechanics">
+              <PropertyRef Name="MechanicId" />
+            </Principal>
+            <Dependent Role="tblJobCards">
+              <PropertyRef Name="MechanicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMechanics_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealers" Multiplicity="1" />
+          <End Role="tblMechanics" Type="Self.tblMechanics" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblMechanics">
+              <PropertyRef Name="MechanicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblServices_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealers" Multiplicity="1" />
+          <End Role="tblServices" Type="Self.tblServices" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblServices">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVehicles_tblCustomers">
+          <End Role="tblCustomers" Type="Self.tblCustomers" Multiplicity="1" />
+          <End Role="tblVehicles" Type="Self.tblVehicles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCustomers">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="tblVehicles">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ServiceBookingDBModelStoreContainer">
+          <EntitySet Name="tblAppointments" EntityType="Self.tblAppointments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblCustomers" EntityType="Self.tblCustomers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblDealers" EntityType="Self.tblDealers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblJobCards" EntityType="Self.tblJobCards" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMechanics" EntityType="Self.tblMechanics" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRecords" EntityType="Self.tblRecords" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblServices" EntityType="Self.tblServices" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblVehicles" EntityType="Self.tblVehicles" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblAppointments_tblCustomers" Association="Self.FK_tblAppointments_tblCustomers">
+            <End Role="tblCustomers" EntitySet="tblCustomers" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAppointments_tblDealers" Association="Self.FK_tblAppointments_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAppointments_tblServices" Association="Self.FK_tblAppointments_tblServices">
+            <End Role="tblServices" EntitySet="tblServices" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblJobCards_tblAppointments" Association="Self.FK_tblJobCards_tblAppointments">
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+            <End Role="tblJobCards" EntitySet="tblJobCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblJobCards_tblMechanics" Association="Self.FK_tblJobCards_tblMechanics">
+            <End Role="tblMechanics" EntitySet="tblMechanics" />
+            <End Role="tblJobCards" EntitySet="tblJobCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMechanics_tblDealers" Association="Self.FK_tblMechanics_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblMechanics" EntitySet="tblMechanics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblServices_tblDealers" Association="Self.FK_tblServices_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblServices" EntitySet="tblServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVehicles_tblCustomers" Association="Self.FK_tblVehicles_tblCustomers">
+            <End Role="tblCustomers" EntitySet="tblCustomers" />
+            <End Role="tblVehicles" EntitySet="tblVehicles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ServiceBookingDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblAppointment">
+          <Key>
+            <PropertyRef Name="AppintmentId" />
+          </Key>
+          <Property Name="AppintmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ServiceId" Type="Int32" Nullable="false" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="BookingDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="tblCustomer" Relationship="Self.FK_tblAppointments_tblCustomers" FromRole="tblAppointments" ToRole="tblCustomers" />
+          <NavigationProperty Name="tblDealer" Relationship="Self.FK_tblAppointments_tblDealers" FromRole="tblAppointments" ToRole="tblDealers" />
+          <NavigationProperty Name="tblService" Relationship="Self.FK_tblAppointments_tblServices" FromRole="tblAppointments" ToRole="tblServices" />
+          <NavigationProperty Name="tblJobCards" Relationship="Self.FK_tblJobCards_tblAppointments" FromRole="tblAppointments" ToRole="tblJobCards" />
+        </EntityType>
+        <EntityType Name="tblCustomer">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ZipCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OtherNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tblAppointment" Relationship="Self.FK_tblAppointments_tblCustomers" FromRole="tblCustomers" ToRole="tblAppointments" />
+          <NavigationProperty Name="tblVehicles" Relationship="Self.FK_tblVehicles_tblCustomers" FromRole="tblCustomers" ToRole="tblVehicles" />
+        </EntityType>
+        <EntityType Name="tblDealer">
+          <Key>
+            <PropertyRef Name="DealerId" />
+          </Key>
+          <Property Name="DealerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DealerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ZipCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tblAppointment" Relationship="Self.FK_tblAppointments_tblDealers" FromRole="tblDealers" ToRole="tblAppointments" />
+          <NavigationProperty Name="tblMechanic" Relationship="Self.FK_tblMechanics_tblDealers" FromRole="tblDealers" ToRole="tblMechanics" />
+          <NavigationProperty Name="tblService" Relationship="Self.FK_tblServices_tblDealers" FromRole="tblDealers" ToRole="tblServices" />
+        </EntityType>
+        <EntityType Name="tblJobCard">
+          <Key>
+            <PropertyRef Name="JobCardId" />
+          </Key>
+          <Property Name="JobCardId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MechanicId" Type="Int32" Nullable="false" />
+          <Property Name="AppointmentId" Type="Int32" Nullable="false" />
+          <Property Name="TotalPrice" Type="Double" Nullable="false" />
+          <Property Name="StartDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblAppointment" Relationship="Self.FK_tblJobCards_tblAppointments" FromRole="tblJobCards" ToRole="tblAppointments" />
+          <NavigationProperty Name="tblMechanic" Relationship="Self.FK_tblJobCards_tblMechanics" FromRole="tblJobCards" ToRole="tblMechanics" />
+        </EntityType>
+        <EntityType Name="tblMechanic">
+          <Key>
+            <PropertyRef Name="MechanicId" />
+          </Key>
+          <Property Name="MechanicId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MechanicName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Make" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="EmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="isActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblDealer" Relationship="Self.FK_tblMechanics_tblDealers" FromRole="tblMechanics" ToRole="tblDealers" />
+          <NavigationProperty Name="tblJobCards" Relationship="Self.FK_tblJobCards_tblMechanics" FromRole="tblMechanics" ToRole="tblJobCards" />
+        </EntityType>
+        <EntityType Name="tblRecord">
+          <Key>
+            <PropertyRef Name="RecordId" />
+          </Key>
+          <Property Name="RecordId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DealerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DealerContactNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MechanicName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MechanicContactNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ServiceName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StartDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EndDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TotalPrice" Type="Double" Nullable="false" />
+          <Property Name="LicensePlate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblService">
+          <Key>
+            <PropertyRef Name="ServiceId" />
+          </Key>
+          <Property Name="ServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ServiceName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DealerId" Type="Int32" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="FixPrice" Type="Double" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="tblAppointments" Relationship="Self.FK_tblAppointments_tblServices" FromRole="tblServices" ToRole="tblAppointments" />
+          <NavigationProperty Name="tblDealer" Relationship="Self.FK_tblServices_tblDealers" FromRole="tblServices" ToRole="tblDealers" />
+        </EntityType>
+        <EntityType Name="tblVehicle">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LicensePlate" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Make" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RegistrationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ChassisNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Colour" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MeterValue" Type="Double" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblCustomer" Relationship="Self.FK_tblVehicles_tblCustomers" FromRole="tblVehicles" ToRole="tblCustomers" />
+        </EntityType>
+        <Association Name="FK_tblAppointments_tblCustomers">
+          <End Role="tblCustomers" Type="Self.tblCustomer" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointment" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblCustomers">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAppointments_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealer" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointment" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAppointments_tblServices">
+          <End Role="tblServices" Type="Self.tblService" Multiplicity="1" />
+          <End Role="tblAppointments" Type="Self.tblAppointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblServices">
+              <PropertyRef Name="ServiceId" />
+            </Principal>
+            <Dependent Role="tblAppointments">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblJobCards_tblAppointments">
+          <End Role="tblAppointments" Type="Self.tblAppointment" Multiplicity="1" />
+          <End Role="tblJobCards" Type="Self.tblJobCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblAppointments">
+              <PropertyRef Name="AppintmentId" />
+            </Principal>
+            <Dependent Role="tblJobCards">
+              <PropertyRef Name="AppointmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVehicles_tblCustomers">
+          <End Role="tblCustomers" Type="Self.tblCustomer" Multiplicity="1" />
+          <End Role="tblVehicles" Type="Self.tblVehicle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCustomers">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="tblVehicles">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMechanics_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealer" Multiplicity="1" />
+          <End Role="tblMechanics" Type="Self.tblMechanic" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblMechanics">
+              <PropertyRef Name="MechanicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblServices_tblDealers">
+          <End Role="tblDealers" Type="Self.tblDealer" Multiplicity="1" />
+          <End Role="tblServices" Type="Self.tblService" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblDealers">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="tblServices">
+              <PropertyRef Name="ServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblJobCards_tblMechanics">
+          <End Role="tblMechanics" Type="Self.tblMechanic" Multiplicity="1" />
+          <End Role="tblJobCards" Type="Self.tblJobCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMechanics">
+              <PropertyRef Name="MechanicId" />
+            </Principal>
+            <Dependent Role="tblJobCards">
+              <PropertyRef Name="MechanicId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ServiceBookingDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAppointments" EntityType="Self.tblAppointment" />
+          <EntitySet Name="tblCustomers" EntityType="Self.tblCustomer" />
+          <EntitySet Name="tblDealers" EntityType="Self.tblDealer" />
+          <EntitySet Name="tblJobCards" EntityType="Self.tblJobCard" />
+          <EntitySet Name="tblMechanics" EntityType="Self.tblMechanic" />
+          <EntitySet Name="tblRecords" EntityType="Self.tblRecord" />
+          <EntitySet Name="tblServices" EntityType="Self.tblService" />
+          <EntitySet Name="tblVehicles" EntityType="Self.tblVehicle" />
+          <AssociationSet Name="FK_tblAppointments_tblCustomers" Association="Self.FK_tblAppointments_tblCustomers">
+            <End Role="tblCustomers" EntitySet="tblCustomers" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAppointments_tblDealers" Association="Self.FK_tblAppointments_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAppointments_tblServices" Association="Self.FK_tblAppointments_tblServices">
+            <End Role="tblServices" EntitySet="tblServices" />
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblJobCards_tblAppointments" Association="Self.FK_tblJobCards_tblAppointments">
+            <End Role="tblAppointments" EntitySet="tblAppointments" />
+            <End Role="tblJobCards" EntitySet="tblJobCards" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVehicles_tblCustomers" Association="Self.FK_tblVehicles_tblCustomers">
+            <End Role="tblCustomers" EntitySet="tblCustomers" />
+            <End Role="tblVehicles" EntitySet="tblVehicles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMechanics_tblDealers" Association="Self.FK_tblMechanics_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblMechanics" EntitySet="tblMechanics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblServices_tblDealers" Association="Self.FK_tblServices_tblDealers">
+            <End Role="tblDealers" EntitySet="tblDealers" />
+            <End Role="tblServices" EntitySet="tblServices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblJobCards_tblMechanics" Association="Self.FK_tblJobCards_tblMechanics">
+            <End Role="tblMechanics" EntitySet="tblMechanics" />
+            <End Role="tblJobCards" EntitySet="tblJobCards" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ServiceBookingDBModelStoreContainer" CdmEntityContainer="ServiceBookingDBEntities">
+          <EntitySetMapping Name="tblAppointments">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblAppointment">
+              <MappingFragment StoreEntitySet="tblAppointments">
+                <ScalarProperty Name="AppintmentId" ColumnName="AppintmentId" />
+                <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="BookingDateTime" ColumnName="BookingDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCustomers">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblCustomer">
+              <MappingFragment StoreEntitySet="tblCustomers">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="OtherNo" ColumnName="OtherNo" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDealers">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblDealer">
+              <MappingFragment StoreEntitySet="tblDealers">
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="DealerName" ColumnName="DealerName" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblJobCards">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblJobCard">
+              <MappingFragment StoreEntitySet="tblJobCards">
+                <ScalarProperty Name="JobCardId" ColumnName="JobCardId" />
+                <ScalarProperty Name="MechanicId" ColumnName="MechanicId" />
+                <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMechanics">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblMechanic">
+              <MappingFragment StoreEntitySet="tblMechanics">
+                <ScalarProperty Name="MechanicId" ColumnName="MechanicId" />
+                <ScalarProperty Name="MechanicName" ColumnName="MechanicName" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRecords">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblRecord">
+              <MappingFragment StoreEntitySet="tblRecords">
+                <ScalarProperty Name="RecordId" ColumnName="RecordId" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="DealerName" ColumnName="DealerName" />
+                <ScalarProperty Name="DealerContactNo" ColumnName="DealerContactNo" />
+                <ScalarProperty Name="MechanicName" ColumnName="MechanicName" />
+                <ScalarProperty Name="MechanicContactNo" ColumnName="MechanicContactNo" />
+                <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+                <ScalarProperty Name="StartDateTime" ColumnName="StartDateTime" />
+                <ScalarProperty Name="EndDateTime" ColumnName="EndDateTime" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+                <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblServices">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblService">
+              <MappingFragment StoreEntitySet="tblServices">
+                <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+                <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="FixPrice" ColumnName="FixPrice" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblVehicles">
+            <EntityTypeMapping TypeName="ServiceBookingDBModel.tblVehicle">
+              <MappingFragment StoreEntitySet="tblVehicles">
+                <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+                <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+                <ScalarProperty Name="ChassisNo" ColumnName="ChassisNo" />
+                <ScalarProperty Name="Colour" ColumnName="Colour" />
+                <ScalarProperty Name="MeterValue" ColumnName="MeterValue" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

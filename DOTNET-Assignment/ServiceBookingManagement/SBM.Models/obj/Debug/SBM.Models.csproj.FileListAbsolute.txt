@@ -1,0 +1,5 @@
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Models\bin\Debug\SBM.Models.dll
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Models\bin\Debug\SBM.Models.pdb
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Models\obj\Debug\SBM.Models.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Models\obj\Debug\SBM.Models.dll
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Models\obj\Debug\SBM.Models.pdb

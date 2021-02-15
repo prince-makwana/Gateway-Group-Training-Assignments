@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Customer/_CustomerLayout.cshtml";
+}
+
+@if (Request.IsAuthenticated)
+{
+    HttpCookie reqCookie = Request.Cookies["userInfo"];
+
+    string EmailId = reqCookie["EmailId"].ToString();
+
+<h4>Welcome @EmailId</h4>
+
+}
+
+

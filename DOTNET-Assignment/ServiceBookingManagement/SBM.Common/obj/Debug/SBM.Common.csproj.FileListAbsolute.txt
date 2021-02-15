@@ -1,0 +1,6 @@
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\bin\Debug\SBM.Common.dll
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\bin\Debug\SBM.Common.pdb
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\obj\Debug\SBM.Common.csprojAssemblyReference.cache
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\obj\Debug\SBM.Common.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\obj\Debug\SBM.Common.dll
+C:\Users\pdm29\Web Development Projects\ServiceBookingManagement\SBM.Common\obj\Debug\SBM.Common.pdb
