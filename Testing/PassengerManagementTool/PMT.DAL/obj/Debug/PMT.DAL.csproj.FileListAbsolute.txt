@@ -1,0 +1,14 @@
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\PMT.DAL.dll
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\PMT.DAL.pdb
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\obj\Debug\PMT.DAL.csprojAssemblyReference.cache
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\obj\Debug\PMT.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\obj\Debug\PMT.DAL.dll
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\obj\Debug\PMT.DAL.pdb
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\PMT.DAL.dll.config
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\EntityFramework.dll
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\PMT.Models.dll
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\PMT.Models.pdb
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\EntityFramework.xml
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.DAL\obj\Debug\PMT.DAL.csproj.CopyComplete
