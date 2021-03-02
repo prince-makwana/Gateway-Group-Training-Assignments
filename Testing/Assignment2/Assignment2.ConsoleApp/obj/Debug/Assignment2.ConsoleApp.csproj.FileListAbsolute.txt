@@ -1,0 +1,7 @@
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\bin\Debug\Assignment2.ConsoleApp.exe.config
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\bin\Debug\Assignment2.ConsoleApp.exe
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\bin\Debug\Assignment2.ConsoleApp.pdb
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\obj\Debug\Assignment2.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\obj\Debug\Assignment2.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\obj\Debug\Assignment2.ConsoleApp.exe
+C:\Users\pdm29\source\repos\Assignment2\Assignment2.ConsoleApp\obj\Debug\Assignment2.ConsoleApp.pdb

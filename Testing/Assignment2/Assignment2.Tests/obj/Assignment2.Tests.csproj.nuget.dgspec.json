@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj": {}
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj": {
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj",
         "projectName": "Assignment2.ConsoleApp",
-        "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj"
+        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj": {
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj",
         "projectName": "Assignment2.Tests",
-        "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj",
+        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.Tests\\Assignment2.Tests.csproj",
         "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.Tests\\obj\\",
+        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,8 +38,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj": {
-                "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj"
+              "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj": {
+                "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway Projects\\Testing\\Assignment2\\Assignment2.ConsoleApp\\Assignment2.ConsoleApp.csproj"
               }
             }
           }
