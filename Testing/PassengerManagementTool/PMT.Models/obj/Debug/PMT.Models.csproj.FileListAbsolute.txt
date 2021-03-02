@@ -3,3 +3,4 @@ C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.Models\bin\Debug\PMT.Mod
 C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.Models\obj\Debug\PMT.Models.csproj.CoreCompileInputs.cache
 C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.Models\obj\Debug\PMT.Models.dll
 C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.Models\obj\Debug\PMT.Models.pdb
+C:\Users\pdm29\source\repos\PassengerManagementTool\PMT.Models\obj\Debug\PMT.Models.csprojAssemblyReference.cache
