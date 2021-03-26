@@ -1,0 +1,40 @@
+<h1 class="mt-4">Dashboard</h1>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i> Company List
+    </div>
+    <div class="card-body">
+        <a class="nav-link" style="margin-bottom: 10px;" class="btn btn-success" routerLink="/add-company">Create Company</a>
+        <div class="table-responsive">
+            <table id="dataTable" class="table table-bordered" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th style="word-wrap: break-word;">Email</th>
+                        <th>Name</th>
+                        <th style="word-wrap: break-word;">Address</th>
+                        <th>Employees</th>
+                        <th>Total branch</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let company of companies">
+                        <td>{{company.id}}</td>
+                        <td style="width: 0%; word-wrap: break-word;">{{company.email}}</td>
+                        <td>{{company.name}}</td>
+                        <td style="word-wrap: break-word;">{{company.address}}</td>
+                        <td>{{company.totalEmployee}}</td>
+                        <td>{{company.totalBranch}}</td>
+                        <td><a routerLink="/view-company/{{company.id}}" class="btn btn-success" style="margin-right: 3px;">View</a>
+                            <a routerLink="/edit-company/{{company.id}}" class="btn btn-warning" style="margin-right: 3px;">Edit</a>
+                            <a (click)="delete(company.id);" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

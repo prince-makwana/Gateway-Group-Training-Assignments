@@ -1,0 +1,20 @@
+{
+  "companyInfo": [
+    {
+      "id": 1,
+      "email": "prince.makwana@thegatewaycorp.co.in",
+      "name": "DSF",
+      "totalEmployee": 123,
+      "address": "B/5, Dama Apartments",
+      "isCompanyActive": false,
+      "totalBranch": 1,
+      "companyBranch": [
+        {
+          "branchId": 1,
+          "branchName": "abc",
+          "branchAddress": "adnlnlf"
+        }
+      ]
+    }
+  ]
+}

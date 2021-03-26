@@ -1,0 +1,97 @@
+<h1 class="mt-4">Dashboard</h1>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i> Add Company Details
+    </div>
+    <div class="card-body">
+        <form [formGroup]="companyForm" (ngSubmit)="onSubmit()" novalidate>
+            <input class="form-control" type="hidden" formControlName="id" ng-required="required">
+
+            <!-- Email Address -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Email Id</label>
+                <div class="col-md-6">
+                    <input class="form-control" placeholder="Company Email ID" type="text" formControlName="email" ng-required="required">
+                    <div *ngIf="formValidation.email.touched && formValidation.email.invalid" style="color: red;">Email is invalid</div>
+                </div>
+            </div>
+
+            <!-- Company Name -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Name</label>
+                <div class="col-md-6">
+                    <input class="form-control" placeholder="Company Name" type="text" formControlName="name" ng-required="required">
+                </div>
+            </div>
+
+            <!-- Total Employees -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Total Employees</label>
+                <div class="col-md-6">
+                    <input class="form-control" placeholder="Total Employees" type="number" formControlName="totalEmployee" ng-required="required">
+                </div>
+            </div>
+
+
+            <!-- Company Address -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Address</label>
+                <div class="col-md-6">
+                    <input class="form-control" placeholder="Company Address" type="text" formControlName="address" ng-required="required">
+                </div>
+            </div>
+
+            <!-- Is Company Active -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Is Company Active</label>
+                <div class="col-md-6">
+                    <input class="chkbox" type="checkbox" formControlName="isCompanyActive" ng-required="required">
+                </div>
+            </div>
+
+            <!--Branch Details-->
+            <div class="col-md-6" style="margin-left: -1.5%;">
+                <label>Branch Details</label>
+                <button style="margin-left:29%;" type="button" class="btn btn-primary" (click)="addBranch()"><i
+                  class="fa fa-plus"></i> Add Branch</button>
+            </div>
+
+            <div class="form-inline" formArrayName="companyBranch" *ngFor="let item of getBranchArray(); let i = index;">
+                <div [formGroupName]="i">
+                    <div class="form-row" style="margin-top: 2%; margin-left: -2%;">
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <label for="branchId">Branch Id</label>
+                                <input class="form-control" type="number" placeholder="Branch Id" formControlName="branchId" id="branchId" ng-required="required">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <label for="branchName">Branch Name</label>
+                                <input class="form-control" placeholder="Branch Name" type="text" formControlName="branchName" id="branchName" ng-required="required">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <label for="branchAddress">Branch Address</label>
+                                <input class="form-control" placeholder="Branch Address" type="text" formControlName="branchAddress" id="branchAddress" ng-required="required">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-12">
+                                <button class="btn btn-danger" style="margin-top: 13%;" (click)="removeBranch(i)"><i class="fa fa-times"></i> Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 2%;">
+                <button type="submit" class="btn btn-success" style="margin-right: 5%;">Add Company</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

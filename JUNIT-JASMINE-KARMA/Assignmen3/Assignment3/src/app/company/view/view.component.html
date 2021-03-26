@@ -1,0 +1,90 @@
+<h1 class="mt-4">Dashboard</h1>
+<div class="jumbotron card">
+    <div class="card mb-2">
+        <h5 class="card-header" style="background-color: rgb(46, 41, 41); color: white;"><i class="fa fa-info-circle"></i> Company Details</h5>
+        <div style="padding: 3%;">
+
+            <!-- Company Name -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Name</label>
+                <div class="col-md-6">
+                    <p>{{company.name}}</p>
+                </div>
+            </div>
+
+            <!-- Company Email -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Email Id</label>
+                <div class="col-md-6">
+                    <p>{{company.email}}</p>
+                </div>
+            </div>
+
+            <!-- Company Address -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Address</label>
+                <div class="col-md-6">
+                    <p>{{company.address}}</p>
+                </div>
+            </div>
+
+            <!-- Total Employees -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Total Employees</label>
+                <div class="col-md-6">
+                    <p>{{company.totalEmployee}}</p>
+                </div>
+            </div>
+
+            <!-- Is Company Active -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Is Company Active</label>
+                <div class="col-md-6">
+                    <p>{{company.isCompanyActive}}</p>
+                </div>
+            </div>
+
+            <!-- Total Branches -->
+            <div class="form-group row">
+                <label class=" control-label col-md-4">Total Branches</label>
+                <div class="col-md-6">
+                    <p>{{company.totalBranch}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Company Branch details Table -->
+    <div class="card mb-2" style="margin:0%;">
+        <h5 class="card-header" style="background-color: rgb(46, 41, 41);color: white;">
+            <i class="fa fa-list"></i> Company Branches
+        </h5>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="auto" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th style="width: auto;">Branch Id</th>
+                            <th style="width: auto;">Branch Name</th>
+                            <th style="width: auto;">Branch Address</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th style="width: auto;">Branch Id</th>
+                            <th style="width: auto;">Branch Name</th>
+                            <th style="width: auto;">Branch Address</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr *ngFor="let branch of company.companyBranch">
+                            <td>{{branch.branchId}}</td>
+                            <td>{{branch.branchName}}</td>
+                            <td>{{branch.branchAddress}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
