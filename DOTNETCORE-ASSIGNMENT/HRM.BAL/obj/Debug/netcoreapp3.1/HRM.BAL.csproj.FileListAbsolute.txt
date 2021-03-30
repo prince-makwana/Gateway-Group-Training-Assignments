@@ -1,0 +1,28 @@
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.deps.json
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.dll
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.pdb
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.DAL.dll
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.Models.dll
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.DAL.pdb
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.Models.pdb
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csprojAssemblyReference.cache
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.AssemblyInfoInputs.cache
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.AssemblyInfo.cs
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csproj.CoreCompileInputs.cache
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csproj.CopyComplete
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.dll
+C:\Users\prince.makwana\source\repos\HRM.WebAPI\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.pdb
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.deps.json
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.dll
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.BAL.pdb
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.DAL.dll
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.Models.dll
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.DAL.pdb
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\bin\Debug\netcoreapp3.1\HRM.Models.pdb
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csprojAssemblyReference.cache
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.AssemblyInfoInputs.cache
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.AssemblyInfo.cs
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.csproj.CopyComplete
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.dll
+C:\Users\pdm29\Web Development Projects\DOTNETCORE-ASSIGNMENT\HRM.BAL\obj\Debug\netcoreapp3.1\HRM.BAL.pdb

@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "HRM.BAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "HRM.DAL": "1.0.0",
+          "HRM.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HRM.BAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRM.BAL.dll": {}
+        }
+      },
+      "HRM.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "HRM.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HRM.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRM.DAL.dll": {}
+        }
+      },
+      "HRM.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/HRM.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRM.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HRM.BAL/1.0.0": {
+      "type": "project",
+      "path": "../HRM.BAL/HRM.BAL.csproj",
+      "msbuildProject": "../HRM.BAL/HRM.BAL.csproj"
+    },
+    "HRM.DAL/1.0.0": {
+      "type": "project",
+      "path": "../HRM.DAL/HRM.DAL.csproj",
+      "msbuildProject": "../HRM.DAL/HRM.DAL.csproj"
+    },
+    "HRM.Models/1.0.0": {
+      "type": "project",
+      "path": "../HRM.Models/HRM.Models.csproj",
+      "msbuildProject": "../HRM.Models/HRM.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "HRM.BAL >= 1.0.0",
+      "HRM.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\prince.makwana\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.WebAPI\\HRM.WebAPI.csproj",
+      "projectName": "HRM.WebAPI",
+      "projectPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.WebAPI\\HRM.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.WebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj": {
+              "projectPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj"
+            },
+            "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+              "projectPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
