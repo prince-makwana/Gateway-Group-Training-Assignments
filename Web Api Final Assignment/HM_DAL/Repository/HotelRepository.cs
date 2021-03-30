@@ -10,11 +10,11 @@ namespace HM_DAL.Repository
 {
     public class HotelRepository : IHotelRepository
     {
-        private readonly Database.Hotel_Management_SystemEntities _dbContext;
+        private readonly Database.HotelManagementSystemEntities _dbContext;
 
         public HotelRepository()
         {
-            _dbContext = new Database.Hotel_Management_SystemEntities();
+            _dbContext = new Database.HotelManagementSystemEntities();
         }
 
         public string bookRoom(Booking_Data model)

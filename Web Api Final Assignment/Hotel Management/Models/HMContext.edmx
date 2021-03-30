@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="HotelManagementSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Booking">
           <Key>
             <PropertyRef Name="bookingId" />
@@ -51,7 +51,7 @@
           <Property Name="updateDate" Type="datetime" />
           <Property Name="updatedBy" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityContainer Name="ModelStoreContainer">
+        <EntityContainer Name="HotelManagementSystemModelStoreContainer">
           <EntitySet Name="Booking" EntityType="Self.Booking" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
@@ -60,7 +60,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="HotelManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Booking">
           <Key>
             <PropertyRef Name="bookingId" />
@@ -107,7 +107,7 @@
           <Property Name="updateDate" Type="DateTime" Precision="3" />
           <Property Name="updatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="Hotel_Management_SystemEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="HotelManagementSystemEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bookings" EntityType="Self.Booking" />
           <EntitySet Name="Hotels" EntityType="Self.Hotel" />
           <EntitySet Name="Rooms" EntityType="Self.Room" />
@@ -117,9 +117,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Hotel_Management_SystemEntities">
+        <EntityContainerMapping StorageEntityContainer="HotelManagementSystemModelStoreContainer" CdmEntityContainer="HotelManagementSystemEntities">
           <EntitySetMapping Name="Bookings">
-            <EntityTypeMapping TypeName="Model.Booking">
+            <EntityTypeMapping TypeName="HotelManagementSystemModel.Booking">
               <MappingFragment StoreEntitySet="Booking">
                 <ScalarProperty Name="bookingId" ColumnName="bookingId" />
                 <ScalarProperty Name="hotelId" ColumnName="hotelId" />
@@ -131,7 +131,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Hotels">
-            <EntityTypeMapping TypeName="Model.Hotel">
+            <EntityTypeMapping TypeName="HotelManagementSystemModel.Hotel">
               <MappingFragment StoreEntitySet="Hotel">
                 <ScalarProperty Name="hid" ColumnName="hid" />
                 <ScalarProperty Name="hotelName" ColumnName="hotelName" />
@@ -152,7 +152,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Rooms">
-            <EntityTypeMapping TypeName="Model.Room">
+            <EntityTypeMapping TypeName="HotelManagementSystemModel.Room">
               <MappingFragment StoreEntitySet="Room">
                 <ScalarProperty Name="rid" ColumnName="rid" />
                 <ScalarProperty Name="hotelId" ColumnName="hotelId" />

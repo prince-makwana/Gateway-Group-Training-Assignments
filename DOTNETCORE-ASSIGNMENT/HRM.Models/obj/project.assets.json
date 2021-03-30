@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+      "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
       "projectName": "HRM.Models",
-      "projectPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+      "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
       "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prince.makwana\\source\\repos\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
+      "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -36,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -47,11 +48,23 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

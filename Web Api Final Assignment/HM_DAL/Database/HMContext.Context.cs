@@ -13,10 +13,10 @@ namespace HM_DAL.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Hotel_Management_SystemEntities : DbContext
+    public partial class HotelManagementSystemEntities : DbContext
     {
-        public Hotel_Management_SystemEntities()
-            : base("name=Hotel_Management_SystemEntities")
+        public HotelManagementSystemEntities()
+            : base("name=HotelManagementSystemEntities")
         {
         }
     

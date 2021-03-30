@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj": {}
+    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj": {
+    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj",
+        "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj",
         "projectName": "HRM.BAL",
-        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj",
-        "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\obj\\",
+        "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\HRM.BAL.csproj",
+        "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
+        "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.BAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +31,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj": {
-                "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj"
+              "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj": {
+                "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj"
               },
-              "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
-                "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
+              "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+                "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
               }
             }
           }
@@ -79,17 +82,20 @@
         }
       }
     },
-    "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj": {
+    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
+        "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
         "projectName": "HRM.DAL",
-        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
-        "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\obj\\",
+        "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
+        "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
+        "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,8 +109,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
-                "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
+              "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+                "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
               }
             }
           }
@@ -163,17 +169,20 @@
         }
       }
     },
-    "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+        "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
         "projectName": "HRM.Models",
-        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
-        "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
+        "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+        "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
+        "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

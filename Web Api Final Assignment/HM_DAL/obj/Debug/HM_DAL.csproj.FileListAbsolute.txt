@@ -14,3 +14,19 @@ C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_
 C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.csproj.CopyComplete
 C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.dll
 C:\Users\iPrince\Desktop\ASP.NET practicals\ASP.NET WEB API\Hotel Management\HM_DAL\obj\Debug\HM_DAL.pdb
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\HM_DAL.dll.config
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\HM_DAL.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\HM_DAL.pdb
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\AutoMapper.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\EntityFramework.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\HM_Model.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\HM_Model.pdb
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\AutoMapper.xml
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\EntityFramework.xml
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\obj\Debug\HM_DAL.csprojAssemblyReference.cache
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\obj\Debug\HM_DAL.csproj.CoreCompileInputs.cache
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\obj\Debug\HM_DAL.csproj.CopyComplete
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\obj\Debug\HM_DAL.dll
+D:\Gateway-Group-Training-Assignments\Web Api Final Assignment\HM_DAL\obj\Debug\HM_DAL.pdb
