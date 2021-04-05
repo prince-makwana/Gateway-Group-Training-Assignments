@@ -14,3 +14,19 @@ C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.DA
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.csproj.CopyComplete
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.dll
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.pdb
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\PMS.DAL.dll.config
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\PMS.DAL.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\PMS.DAL.pdb
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\AutoMapper.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\EntityFramework.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\PMS.Model.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\PMS.Model.pdb
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\AutoMapper.xml
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\EntityFramework.xml
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.csprojAssemblyReference.cache
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.csproj.CoreCompileInputs.cache
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.csproj.CopyComplete
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.DAL\obj\Debug\PMS.DAL.pdb

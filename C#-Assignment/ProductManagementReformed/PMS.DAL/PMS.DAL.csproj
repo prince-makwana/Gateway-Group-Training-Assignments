@@ -94,13 +94,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\PMS.Model\PMS.Model.csproj">
-      <Project>{ec87f757-f2f7-4ad3-bacd-245a2f23de80}</Project>
-      <Name>PMS.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <Content Include="Database\ProductManagementModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -112,6 +105,12 @@
       <DependentUpon>ProductManagementModel.edmx</DependentUpon>
       <LastGenOutput>ProductManagementModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMS.Model\PMS.Model.csproj">
+      <Project>{ec87f757-f2f7-4ad3-bacd-245a2f23de80}</Project>
+      <Name>PMS.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,7 +24,7 @@ namespace PMS.DAL.Database
         public string SmallImage { get; set; }
         public string LongImage { get; set; }
         public int UserId { get; set; }
-
+    
         public virtual tblUser tblUser { get; set; }
     }
 }

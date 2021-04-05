@@ -19,13 +19,13 @@ namespace PMS.DAL.Database
         {
             this.tblProducts = new HashSet<tblProduct>();
         }
-
+    
         public int UserId { get; set; }
         public string Name { get; set; }
         public string EmailId { get; set; }
         public string Password { get; set; }
         public string ContactNo { get; set; }
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblProduct> tblProducts { get; set; }
     }

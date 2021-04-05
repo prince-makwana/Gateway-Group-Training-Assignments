@@ -3,3 +3,9 @@ C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Mo
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.csproj.CoreCompileInputs.cache
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.dll
 C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.pdb
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\bin\Debug\PMS.Model.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\bin\Debug\PMS.Model.pdb
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.csprojAssemblyReference.cache
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.csproj.CoreCompileInputs.cache
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.dll
+D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.Model\obj\Debug\PMS.Model.pdb
