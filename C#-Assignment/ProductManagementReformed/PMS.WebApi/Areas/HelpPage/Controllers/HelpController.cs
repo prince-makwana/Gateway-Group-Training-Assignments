@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using PMS.WebApi.Areas.HelpPage.ModelDescriptions;
-using PMS.WebApi.Areas.HelpPage.Models;
+using PMS.WebAPI.Areas.HelpPage.ModelDescriptions;
+using PMS.WebAPI.Areas.HelpPage.Models;
 
-namespace PMS.WebApi.Areas.HelpPage.Controllers
+namespace PMS.WebAPI.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

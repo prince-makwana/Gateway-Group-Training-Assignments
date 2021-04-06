@@ -1,0 +1,12 @@
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\bin\Debug\PMS.Models.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\bin\Debug\PMS.Models.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.csprojAssemblyReference.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\bin\Debug\PMS.Models.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\bin\Debug\PMS.Models.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.Models\obj\Debug\PMS.Models.csprojAssemblyReference.cache

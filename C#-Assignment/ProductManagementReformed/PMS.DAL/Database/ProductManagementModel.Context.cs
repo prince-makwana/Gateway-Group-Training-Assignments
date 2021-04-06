@@ -13,10 +13,10 @@ namespace PMS.DAL.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ProductManagmentEntities : DbContext
+    public partial class ProductManagementEntities : DbContext
     {
-        public ProductManagmentEntities()
-            : base("name=ProductManagmentEntities")
+        public ProductManagementEntities()
+            : base("name=ProductManagementEntities")
         {
         }
     
@@ -25,7 +25,11 @@ namespace PMS.DAL.Database
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<tblProduct> tblProducts { get; set; }
-        public virtual DbSet<tblUser> tblUsers { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public void FixEfProviderServicesProblem()
+        {
+            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+        }
     }
 }

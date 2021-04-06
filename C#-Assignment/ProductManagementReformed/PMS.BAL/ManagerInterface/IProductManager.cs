@@ -1,4 +1,4 @@
-﻿using PMS.Model;
+﻿using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +9,10 @@ namespace PMS.BAL.ManagerInterface
 {
     public interface IProductManager
     {
-        string DeletProduct(int id);
-        string UpdateProduct(Product model);
-        string AddProduct(Product model);
-        List<Product> GetProducts(int userId);
+        bool DeleteProduct(int id);
+        bool EditProduct(ProductVM product);
+        ProductVM GetProductById(int id);
+        bool AddProduct(ProductVM product);
+        List<ProductVM> GetAllProducts();
     }
 }

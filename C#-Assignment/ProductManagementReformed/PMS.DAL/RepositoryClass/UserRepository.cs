@@ -1,89 +1,128 @@
-﻿using AutoMapper;
-using PMS.DAL.RepositoryInterface;
-using PMS.Model;
+﻿using PMS.DAL.RepositoryInterface;
+using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using PMS.DAL.Database;
 
 namespace PMS.DAL.RepositoryClass
 {
     public class UserRepository : IUserRepository
     {
-        private readonly Database.ProductManagmentEntities _dbContext;
+        private readonly Database.ProductManagementEntities _dbContext;
+
         public UserRepository()
         {
-            _dbContext = new Database.ProductManagmentEntities();
+            _dbContext = new Database.ProductManagementEntities();
         }
 
-        /// <summary>
-        /// Registration of New User
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public string CreateUser(User model)
+        public List<UserVM> GetAllUsers()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<User, Database.tblUser>());
-            var mapper = config.CreateMapper();
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<User, UserVM>());
+            var mapper = new Mapper(config); 
 
-            var user = mapper.Map<Database.tblUser>(model);
-
-            _dbContext.tblUsers.Add(user);
-            _dbContext.SaveChanges();
-
-            return "Registration successfully";
-        }
-
-        /// <summary>
-        /// Login of a new User
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public UserViewModel GetUser(UserLogin model)
-        {
-            if(model == null)
+            List<UserVM> userList = new List<UserVM>();
+            try
             {
-                return null;
-            }
-            else
-            {
-                var result = (from u in _dbContext.tblUsers
-                              where (u.EmailId == model.EmailId)
-                              && (u.Password == model.Password) select u).FirstOrDefault();
-
-                UserViewModel user = new UserViewModel()
+                var entities = _dbContext.Users.ToList();
+                
+                if(entities == null)
                 {
-                    EmailId = result.EmailId,
-                    Name = result.Name,
-                    UserId = result.UserId
-                };
-                return user;
+                    userList = null;
+                }
+                else
+                {
+                    foreach (var item in entities)
+                    {
+                        var user = mapper.Map<UserVM>(item);
+                        userList.Add(user);
+                    }
+                }
+
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return userList;
         }
 
-        /// <summary>
-        /// Update User Details.
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public string UpdateUser(User model)
+        public UserVM GetUserById(int id)
         {
-            var entity = _dbContext.tblUsers.Find(model.UserId);
-            if (entity != null)
+            UserVM user = new UserVM();
+            try
             {
-                entity.Name = model.Name;
-                entity.ContactNo = model.ContactNo;
-                entity.EmailId = model.EmailId;
-                entity.Password = model.Password;
+                user = GetAllUsers().FirstOrDefault(u => u.ID == id);
+                if(user == null)
+                {
+                    user = null;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return user;
+        }
 
-                _dbContext.SaveChanges();
-                return "Updated Successfully!";
-            }
-            else
+        public bool checkEmailExists(string Email)
+        {
+            bool result = true;
+            try
             {
-                return "Something went wrong. Please try after sometime.";
+                result = GetAllUsers().Any(u => u.Email == Email);
+                return result;
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return result;
+        }
+
+        public UserVM UserLogin(UserLogin user)
+        {
+            UserVM userVM = new UserVM();
+            try
+            {
+                userVM = GetAllUsers().SingleOrDefault(u => u.Email == user.EmailID && u.Password == user.Password);
+
+                if(userVM == null)
+                {
+                    userVM = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return userVM;
+        }
+
+        public bool RegisterUser(UserVM user)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<UserVM, User>());
+            var mapper = new Mapper(config);
+
+            var newUser = mapper.Map<User>(user);
+            try
+            {
+                _dbContext.Users.Add(newUser);
+                _dbContext.SaveChanges();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return false;
         }
     }
 }

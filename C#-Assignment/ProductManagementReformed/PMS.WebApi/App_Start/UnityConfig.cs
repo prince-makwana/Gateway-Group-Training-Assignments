@@ -1,11 +1,11 @@
-using System.Web.Http;
-using Unity;
-using Unity.WebApi;
 using PMS.BAL.Helper;
 using PMS.BAL.ManagerClass;
 using PMS.BAL.ManagerInterface;
+using System.Web.Http;
+using Unity;
+using Unity.WebApi;
 
-namespace PMS.WebApi
+namespace PMS.WebAPI
 {
     public static class UnityConfig
     {
@@ -18,10 +18,10 @@ namespace PMS.WebApi
 
             // e.g. container.RegisterType<ITestService, TestService>();
 
-            container.AddNewExtension<UnityRepositoryHelper>();
-
             container.RegisterType<IUserManager, UserManager>();
             container.RegisterType<IProductManager, ProductManager>();
+            
+            container.AddNewExtension<UnityHelper>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

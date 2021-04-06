@@ -1,41 +1,46 @@
 ﻿using PMS.BAL.ManagerInterface;
+using PMS.DAL.RepositoryInterface;
+using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PMS.DAL.RepositoryInterface;
-using PMS.Model;
 
 namespace PMS.BAL.ManagerClass
 {
     public class ProductManager : IProductManager
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepository _productrepository;
 
         public ProductManager(IProductRepository productRepository)
         {
-            _productRepository = productRepository;
+            _productrepository = productRepository;
         }
 
-        public string AddProduct(Product model)
+        public bool AddProduct(ProductVM product)
         {
-           return _productRepository.AddProduct(model);
+            return _productrepository.AddProduct(product);
         }
 
-        public string DeletProduct(int id)
+        public bool DeleteProduct(int id)
         {
-            return _productRepository.DeletProduct(id);
+            return _productrepository.DeleteProduct(id);
         }
 
-        public List<Product> GetProducts(int userId)
+        public bool EditProduct(ProductVM product)
         {
-            return _productRepository.GetProducts(userId);
+            return _productrepository.EditProduct(product);
         }
 
-        public string UpdateProduct(Product model)
+        public List<ProductVM> GetAllProducts()
         {
-            return _productRepository.UpdateProduct(model);
+            return _productrepository.GetAllProducts();
+        }
+
+        public ProductVM GetProductById(int id)
+        {
+            return _productrepository.GetProductById(id);
         }
     }
 }

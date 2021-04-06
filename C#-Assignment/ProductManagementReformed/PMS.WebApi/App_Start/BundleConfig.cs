@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace PMS.WebApi
+namespace PMS.WebAPI
 {
     public class BundleConfig
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace PMS.WebApi.Areas.HelpPage.ModelDescriptions
+namespace PMS.WebAPI.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

@@ -1,0 +1,150 @@
+﻿@model IEnumerable<PMS.Models.ProductVM>
+
+@{
+    ViewBag.Title = "ProductList";
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+@if(ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}
+
+<style>
+
+    .gallery-title {
+        font-size: 36px;
+        color: #42B32F;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 70px;
+    }
+
+        .gallery-title:after {
+            content: "";
+            position: absolute;
+            width: 7.5%;
+            left: 46.5%;
+            height: 45px;
+            border-bottom: 1px solid #5e5e5e;
+        }
+
+    .filter-button {
+        font-size: 18px;
+        border: 1px solid #42B32F;
+        border-radius: 5px;
+        text-align: center;
+        color: #42B32F;
+        margin-bottom: 30px;
+    }
+
+        .filter-button:hover {
+            font-size: 18px;
+            border: 1px solid #42B32F;
+            border-radius: 5px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #42B32F;
+        }
+
+    .btn-default:active .filter-button:active {
+        background-color: #42B32F;
+        color: white;
+    }
+
+    .port-image {
+        width: 100%;
+    }
+
+    .gallery_product {
+        margin-bottom: 30px;
+    }
+</style>
+
+
+<div class="container">
+    <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Products Gallery</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="electronics">Electronics</button>
+            <button class="btn btn-default filter-button" data-filter="books">Books</button>
+            <button class="btn btn-default filter-button" data-filter="clothes">Clothes</button>
+            <button class="btn btn-default filter-button" data-filter="homekitchenappliances">Home/Kitchen Appliances</button>
+            <button class="btn btn-default filter-button" data-filter="others">Others</button>
+        </div>
+        <br />
+        @foreach (var item in Model)
+        {
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter @item.Category.ToLower().Replace(" ",string.Empty).Replace("/",String.Empty)">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="@Url.Content(item.smallImage)" class="img-responsive" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.shortDescription</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Price: $ @item.Price</li>
+                        <li class="list-group-item">Category: @item.Category</li>
+                        <li class="list-group-item">Quantity: @item.Quantity</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="@Url.Action("DeleteProduct", "Product", new { id = item.ID })" class="btn btn-danger"> Delete</a>
+                        <a href="@Url.Action("EditProduct", "Product", new { id = item.ID })" class="btn btn-success">Edit</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $(".filter-button").click(function () {
+            var value = $(this).attr('data-filter');
+
+            if (value == "all") {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else {
+                //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
+
+            }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
+</script>
+
+@section scripts{
+    <script>
+
+        $(function () {
+            var msg ='@TempData["successMssg"]';
+            if (msg != '') {
+
+                alertify.alert(msg);
+            }
+        });
+    </script>
+
+}

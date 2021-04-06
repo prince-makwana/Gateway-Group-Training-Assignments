@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace PMS.WebApi.Controllers
+namespace PMS.WebAPI.Controllers
 {
     public class ValuesController : ApiController
     {
@@ -18,7 +18,7 @@ namespace PMS.WebApi.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            return "value";
+            throw new NotImplementedException();
         }
 
         // POST api/values

@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using PMS.WebApi.Areas.HelpPage.ModelDescriptions;
+using PMS.WebAPI.Areas.HelpPage.ModelDescriptions;
 
-namespace PMS.WebApi.Areas.HelpPage
+namespace PMS.WebAPI.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

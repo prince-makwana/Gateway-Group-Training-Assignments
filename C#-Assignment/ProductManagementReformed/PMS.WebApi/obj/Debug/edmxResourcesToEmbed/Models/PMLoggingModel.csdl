@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PMLoggingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="APIError">
+    <Key>
+      <PropertyRef Name="APIErrorId" />
+    </Key>
+    <Property Name="APIErrorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequestMethod" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="RequestUri" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="DateTime" Precision="3" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ApiLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Host" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Headers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StatusCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RequestBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RequestedMethod" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserHostAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Useragent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AbsoluteUri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RequestType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="PMLoggingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="APIErrors" EntityType="Self.APIError" />
+    <EntitySet Name="ApiLogs" EntityType="Self.ApiLog" />
+  </EntityContainer>
+</Schema>

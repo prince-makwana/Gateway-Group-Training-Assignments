@@ -1,30 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ProductManagmentModelStoreContainer" CdmEntityContainer="ProductManagmentEntities">
-    <EntitySetMapping Name="tblProducts">
-      <EntityTypeMapping TypeName="ProductManagmentModel.tblProduct">
-        <MappingFragment StoreEntitySet="tblProducts">
-          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+  <EntityContainerMapping StorageEntityContainer="ProductManagementModelStoreContainer" CdmEntityContainer="ProductManagementEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ProductManagementModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Category" ColumnName="Category" />
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
-          <ScalarProperty Name="LongDescription" ColumnName="LongDescription" />
-          <ScalarProperty Name="SmallImage" ColumnName="SmallImage" />
-          <ScalarProperty Name="LongImage" ColumnName="LongImage" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="shortDescription" ColumnName="shortDescription" />
+          <ScalarProperty Name="longDescription" ColumnName="longDescription" />
+          <ScalarProperty Name="smallImage" ColumnName="smallImage" />
+          <ScalarProperty Name="longImage" ColumnName="longImage" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblUsers">
-      <EntityTypeMapping TypeName="ProductManagmentModel.tblUser">
-        <MappingFragment StoreEntitySet="tblUsers">
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProductManagementModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

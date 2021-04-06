@@ -1,35 +1,46 @@
 ﻿using PMS.BAL.ManagerInterface;
+using PMS.DAL.RepositoryInterface;
+using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PMS.DAL.RepositoryInterface;
-using PMS.Model;
 
 namespace PMS.BAL.ManagerClass
 {
     public class UserManager : IUserManager
     {
         private readonly IUserRepository _userRepository;
+
         public UserManager(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
 
-        public string CreateUser(User model)
+        public bool checkEmailExists(string Email)
         {
-            return _userRepository.CreateUser(model);
+            return _userRepository.checkEmailExists(Email);
         }
 
-        public UserViewModel GetUser(UserLogin model)
+        public List<UserVM> GetAllUsers()
         {
-            return _userRepository.GetUser(model);
+            return _userRepository.GetAllUsers();
         }
 
-        public string UpdateUser(User model)
+        public UserVM GetUserById(int id)
         {
-            return _userRepository.UpdateUser(model);
+            return _userRepository.GetUserById(id);
+        }
+
+        public bool RegisterUser(UserVM user)
+        {
+            return _userRepository.RegisterUser(user);
+        }
+
+        public UserVM UserLogin(UserLogin user)
+        {
+            return _userRepository.UserLogin(user);
         }
     }
 }

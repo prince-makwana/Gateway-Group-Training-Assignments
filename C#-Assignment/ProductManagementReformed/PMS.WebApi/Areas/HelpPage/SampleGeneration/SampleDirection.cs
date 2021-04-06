@@ -1,4 +1,4 @@
-namespace PMS.WebApi.Areas.HelpPage
+namespace PMS.WebAPI.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

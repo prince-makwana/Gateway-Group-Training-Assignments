@@ -1,4 +1,4 @@
-namespace PMS.WebApi.Areas.HelpPage.ModelDescriptions
+namespace PMS.WebAPI.Areas.HelpPage.ModelDescriptions
 {
     public class EnumValueDescription
     {

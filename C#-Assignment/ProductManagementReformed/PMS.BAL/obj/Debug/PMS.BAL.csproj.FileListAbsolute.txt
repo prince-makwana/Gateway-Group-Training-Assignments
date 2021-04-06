@@ -1,62 +1,64 @@
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.dll.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Newtonsoft.Json.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.Model.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Web.Http.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Abstractions.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Container.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.WebApi.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\AutoMapper.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\EntityFramework.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.dll.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.Model.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Newtonsoft.Json.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\System.Web.Http.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Abstractions.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Container.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\AutoMapper.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\bin\Debug\EntityFramework.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csprojAssemblyReference.cache
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csproj.CoreCompileInputs.cache
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csproj.CopyComplete
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.dll.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.BAL.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Newtonsoft.Json.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.Model.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Net.Http.Formatting.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Web.Http.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Abstractions.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Container.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.WebApi.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\AutoMapper.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\EntityFramework.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.DAL.dll.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\PMS.Model.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Newtonsoft.Json.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Net.Http.Formatting.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\System.Web.Http.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Abstractions.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\Unity.Container.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\AutoMapper.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\bin\Debug\EntityFramework.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csprojAssemblyReference.cache
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csproj.CoreCompileInputs.cache
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.csproj.CopyComplete
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.BAL\obj\Debug\PMS.BAL.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.BAL.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.BAL.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.Models.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Web.Http.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Abstractions.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Container.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.WebApi.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\AutoMapper.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.dll.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.Models.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Web.Http.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Abstractions.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Container.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\AutoMapper.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csprojAssemblyReference.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csproj.CopyComplete
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.BAL.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.BAL.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.Models.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Web.Http.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Abstractions.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Container.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.WebApi.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\AutoMapper.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.DAL.dll.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\PMS.Models.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\System.Web.Http.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Abstractions.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\Unity.Container.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\AutoMapper.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csprojAssemblyReference.cache
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csproj.CoreCompileInputs.cache
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.csproj.CopyComplete
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.BAL\obj\Debug\PMS.BAL.pdb

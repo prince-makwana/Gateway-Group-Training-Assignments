@@ -1,119 +1,140 @@
-﻿using PMS.DAL.RepositoryInterface;
+﻿using AutoMapper;
+using PMS.DAL.Database;
+using PMS.DAL.RepositoryInterface;
+using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PMS.Model;
-using AutoMapper;
 
 namespace PMS.DAL.RepositoryClass
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly Database.ProductManagmentEntities _dbContext;
+        private readonly Database.ProductManagementEntities _dbContext;
 
         public ProductRepository()
         {
-            _dbContext = new Database.ProductManagmentEntities();
+            _dbContext = new Database.ProductManagementEntities();
         }
 
-        /// <summary>
-        /// This method gets all products in list which was entered by user.
-        /// </summary>
-        /// <param name="userId"></param>
-        /// <returns></returns>
-        public List<Product> GetProducts(int userId)
+        public List<ProductVM> GetAllProducts()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Database.tblProduct, Product>());
-            var mapper = config.CreateMapper();
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Product, ProductVM>());
+            var mapper = new Mapper(config);
 
-            List<Product> productList = new List<Product>();
-
-            var data = _dbContext.tblProducts.Where(p => p.UserId == userId).ToList();
-
-            if (data != null)
+            List<ProductVM> productList = new List<ProductVM>();
+            try
             {
-                foreach (var item in data)
+                var entities = _dbContext.Products.ToList();
+
+                if (entities == null)
                 {
-                    Product product = mapper.Map<Product>(item);
-                    productList.Add(product);
+                    productList = null;
                 }
+                else
+                {
+                    foreach (var item in entities)
+                    {
+                        var product = mapper.Map<ProductVM>(item);
+                        productList.Add(product);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             return productList;
         }
 
-        /// <summary>
-        /// Method to add Product by user.
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public string AddProduct(Product model)
+        public bool AddProduct(ProductVM product)
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Product, Database.tblProduct>());
-            var mapper = config.CreateMapper();
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<ProductVM, Product>());
+            var mapper = new Mapper(config);
 
-            var product = mapper.Map<Database.tblProduct>(model);
+            var newProduct = mapper.Map<Product>(product);
 
-            _dbContext.tblProducts.Add(product);
-            _dbContext.SaveChanges();
-
-            return "Product Addedd Successfully.";
-        }
-
-        /// <summary>
-        /// Method to Update Product.
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
-        public string UpdateProduct(Product model)
-        {
-            var entity = _dbContext.tblProducts.Find(model.ProductId);
-            if(entity != null)
+            try
             {
-                entity.Name = model.Name;
-                entity.Category = model.Category;
-                entity.Price = model.Price;
-                entity.Quantity = model.Quantity;
-                entity.ShortDescription = model.ShortDescription;
-                entity.LongDescription = model.LongDescription;
-                entity.SmallImage = model.SmallImage;
-                entity.LongImage = model.LongImage;
-
+                _dbContext.Products.Add(newProduct);
                 _dbContext.SaveChanges();
-                return "Product Updated Successfully!";
+
+                return true;
             }
-            else
+            catch (Exception ex)
             {
-                return "Something went wrong. Please try after sometime.";
+                Console.WriteLine(ex.Message);
             }
+            return false;
         }
 
-        /// <summary>
-        /// Method to Delete Product.
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        public string DeletProduct(int id)
+        public ProductVM GetProductById(int id)
         {
-            if (id <= 0)
-                return "Not a valid Product.";
-            else
+            ProductVM product = new ProductVM();
+            try
             {
-                var product = _dbContext.tblProducts.Find(id);
-                
+                product = GetAllProducts().FirstOrDefault(p => p.ID == id);
                 if(product == null)
                 {
-                    return "Something went wrong or Product not Found...Contact Admin....";
-                }
-                else
-                {
-                    _dbContext.Entry(product).State = System.Data.Entity.EntityState.Deleted;
-                    _dbContext.SaveChanges();
-
-                    return "Deleted Successfully.";
+                    product = null;
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return product;
+        }
+
+        public bool EditProduct(ProductVM product)
+        {
+            Product existingProduct = _dbContext.Products.SingleOrDefault(p => p.ID == product.ID);
+
+            if (existingProduct != null)
+            {
+                #region Update Product MApping from ProductVM -----> Database.Product
+
+                existingProduct.Name = product.Name;
+                existingProduct.Quantity = product.Quantity;
+                existingProduct.shortDescription = product.shortDescription;
+                existingProduct.longDescription = product.longDescription;
+                existingProduct.longImage = product.longImage;
+                existingProduct.smallImage = product.smallImage;
+                existingProduct.Price = product.Price;
+                existingProduct.Category = product.Category;
+
+                #endregion
+
+                _dbContext.SaveChanges();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteProduct(int id)
+        {
+            if (id < 0)
+            {
+                return false;
+            }
+            try
+            {
+                var product = _dbContext.Products.SingleOrDefault(p => p.ID == id);
+                _dbContext.Products.Remove(product);
+                _dbContext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
         }
     }
 }

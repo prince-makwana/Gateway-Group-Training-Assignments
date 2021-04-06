@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PMLoggingModelStoreContainer" CdmEntityContainer="PMLoggingEntities">
+    <EntitySetMapping Name="APIErrors">
+      <EntityTypeMapping TypeName="PMLoggingModel.APIError">
+        <MappingFragment StoreEntitySet="APIErrors">
+          <ScalarProperty Name="APIErrorId" ColumnName="APIErrorId" />
+          <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+          <ScalarProperty Name="RequestUri" ColumnName="RequestUri" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApiLogs">
+      <EntityTypeMapping TypeName="PMLoggingModel.ApiLog">
+        <MappingFragment StoreEntitySet="ApiLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Host" ColumnName="Host" />
+          <ScalarProperty Name="Headers" ColumnName="Headers" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="RequestBody" ColumnName="RequestBody" />
+          <ScalarProperty Name="RequestedMethod" ColumnName="RequestedMethod" />
+          <ScalarProperty Name="UserHostAddress" ColumnName="UserHostAddress" />
+          <ScalarProperty Name="Useragent" ColumnName="Useragent" />
+          <ScalarProperty Name="AbsoluteUri" ColumnName="AbsoluteUri" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

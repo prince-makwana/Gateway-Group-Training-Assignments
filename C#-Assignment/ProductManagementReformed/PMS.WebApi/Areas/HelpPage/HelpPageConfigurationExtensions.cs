@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using PMS.WebApi.Areas.HelpPage.ModelDescriptions;
-using PMS.WebApi.Areas.HelpPage.Models;
+using PMS.WebAPI.Areas.HelpPage.ModelDescriptions;
+using PMS.WebAPI.Areas.HelpPage.Models;
 
-namespace PMS.WebApi.Areas.HelpPage
+namespace PMS.WebAPI.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

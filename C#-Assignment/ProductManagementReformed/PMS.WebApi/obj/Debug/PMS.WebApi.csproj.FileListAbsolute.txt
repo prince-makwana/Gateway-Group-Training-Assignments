@@ -1,176 +1,219 @@
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.dll.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.exe
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.exe.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.rsp
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.exe
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.exe.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.rsp
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Buffers.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Memory.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Numerics.Vectors.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.exe
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.exe.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.rsp
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\VBCSCompiler.exe
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Antlr3.Runtime.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Newtonsoft.Json.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.Model.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Net.Http.Formatting.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Helpers.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.WebHost.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Mvc.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Optimization.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Razor.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Deployment.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Razor.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Unity.Abstractions.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Unity.Container.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Unity.WebApi.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\WebGrease.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Threading.Tasks.Extensions.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\AutoMapper.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.dll.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.Model.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.SqlServer.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Newtonsoft.Json.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Net.Http.Formatting.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Helpers.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.WebHost.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Mvc.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Optimization.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.Razor.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Deployment.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Razor.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Unity.Abstractions.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Unity.Container.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\Antlr3.Runtime.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.pdb
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.dll.config
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\bin\AutoMapper.xml
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csprojAssemblyReference.cache
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csproj.CopyComplete
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.dll
-C:\Users\pdm29\Web Development Projects\Web API\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.dll.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.WebApi.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.exe
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.exe.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csc.rsp
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.exe
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.exe.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\csi.rsp
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Buffers.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Collections.Immutable.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Memory.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Numerics.Vectors.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Reflection.Metadata.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.exe
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.exe.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\vbc.rsp
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\VBCSCompiler.exe
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\roslyn\VBCSCompiler.exe.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Antlr3.Runtime.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.SqlServer.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Microsoft.Web.Infrastructure.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Newtonsoft.Json.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.Model.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Net.Http.Formatting.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Runtime.CompilerServices.Unsafe.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Helpers.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.WebHost.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Mvc.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Optimization.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Razor.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Deployment.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Razor.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Unity.Abstractions.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Unity.Container.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Unity.WebApi.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\WebGrease.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Threading.Tasks.Extensions.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\AutoMapper.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.BAL.dll.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.Model.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\EntityFramework.SqlServer.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Newtonsoft.Json.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Runtime.CompilerServices.Unsafe.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Net.Http.Formatting.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Helpers.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Http.WebHost.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Mvc.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Optimization.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.Razor.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Deployment.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\System.Web.WebPages.Razor.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Unity.Abstractions.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Unity.Container.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\Antlr3.Runtime.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.pdb
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\PMS.DAL.dll.config
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\bin\AutoMapper.xml
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csprojAssemblyReference.cache
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csproj.CoreCompileInputs.cache
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.csproj.CopyComplete
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.dll
-D:\Gateway-Group-Training-Assignments\C#-Assignment\ProductManagementReformed\PMS.WebApi\obj\Debug\PMS.WebApi.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.dll.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.exe
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.exe.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.rsp
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.exe
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.exe.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.rsp
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.AppContext.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Console.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Net.Http.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.exe
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.exe.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.rsp
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Antlr3.Runtime.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.BAL.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.Models.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Swashbuckle.Core.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Helpers.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Mvc.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Optimization.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Razor.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Abstractions.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Container.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.WebApi.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\WebActivatorEx.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\WebGrease.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\AutoMapper.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.BAL.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.Models.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Helpers.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Mvc.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Optimization.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Razor.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Abstractions.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Container.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.pdb
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.dll.config
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\AutoMapper.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csprojAssemblyReference.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csproj.CopyComplete
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.dll
+C:\Users\pdm29\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.dll.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.WebAPI.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.exe
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.exe.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csc.rsp
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.exe
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.exe.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\csi.rsp
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.AppContext.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Console.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Net.Http.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.exe
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.exe.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\vbc.rsp
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Antlr3.Runtime.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.BAL.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.Models.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Swashbuckle.Core.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Helpers.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Mvc.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Optimization.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Razor.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Abstractions.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Container.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.WebApi.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\WebActivatorEx.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\WebGrease.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\AutoMapper.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.BAL.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.Models.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Helpers.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Mvc.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Optimization.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Razor.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Abstractions.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Unity.Container.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\PMS.DAL.dll.config
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\AutoMapper.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csprojAssemblyReference.cache
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.csproj.CopyComplete
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\obj\Debug\PMS.WebAPI.pdb
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Cors.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\prince.makwana\source\repos\CS-Assignment\PMS.WebAPI\bin\System.Web.Http.Cors.xml

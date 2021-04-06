@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PMLoggingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="APIErrors">
+          <Key>
+            <PropertyRef Name="APIErrorId" />
+          </Key>
+          <Property Name="APIErrorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RequestMethod" Type="nvarchar" MaxLength="200" />
+          <Property Name="RequestUri" Type="nvarchar" MaxLength="200" />
+          <Property Name="Time" Type="datetime" />
+          <Property Name="Message" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ApiLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Host" Type="nvarchar(max)" />
+          <Property Name="Headers" Type="nvarchar(max)" />
+          <Property Name="StatusCode" Type="nvarchar(max)" />
+          <Property Name="RequestBody" Type="nvarchar(max)" />
+          <Property Name="RequestedMethod" Type="nvarchar(max)" />
+          <Property Name="UserHostAddress" Type="nvarchar(max)" />
+          <Property Name="Useragent" Type="nvarchar(max)" />
+          <Property Name="AbsoluteUri" Type="nvarchar(max)" />
+          <Property Name="RequestType" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="PMLoggingModelStoreContainer">
+          <EntitySet Name="APIErrors" EntityType="Self.APIErrors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ApiLog" EntityType="Self.ApiLog" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PMLoggingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="APIError">
+          <Key>
+            <PropertyRef Name="APIErrorId" />
+          </Key>
+          <Property Name="APIErrorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RequestMethod" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="RequestUri" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="DateTime" Precision="3" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ApiLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Host" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Headers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="StatusCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RequestBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RequestedMethod" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserHostAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Useragent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AbsoluteUri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RequestType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="PMLoggingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="APIErrors" EntityType="Self.APIError" />
+          <EntitySet Name="ApiLogs" EntityType="Self.ApiLog" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PMLoggingModelStoreContainer" CdmEntityContainer="PMLoggingEntities">
+          <EntitySetMapping Name="APIErrors">
+            <EntityTypeMapping TypeName="PMLoggingModel.APIError">
+              <MappingFragment StoreEntitySet="APIErrors">
+                <ScalarProperty Name="APIErrorId" ColumnName="APIErrorId" />
+                <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+                <ScalarProperty Name="RequestUri" ColumnName="RequestUri" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ApiLogs">
+            <EntityTypeMapping TypeName="PMLoggingModel.ApiLog">
+              <MappingFragment StoreEntitySet="ApiLog">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Host" ColumnName="Host" />
+                <ScalarProperty Name="Headers" ColumnName="Headers" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="RequestBody" ColumnName="RequestBody" />
+                <ScalarProperty Name="RequestedMethod" ColumnName="RequestedMethod" />
+                <ScalarProperty Name="UserHostAddress" ColumnName="UserHostAddress" />
+                <ScalarProperty Name="Useragent" ColumnName="Useragent" />
+                <ScalarProperty Name="AbsoluteUri" ColumnName="AbsoluteUri" />
+                <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

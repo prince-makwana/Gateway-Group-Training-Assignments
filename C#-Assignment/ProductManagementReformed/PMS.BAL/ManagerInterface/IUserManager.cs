@@ -1,4 +1,4 @@
-﻿using PMS.Model;
+﻿using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +9,10 @@ namespace PMS.BAL.ManagerInterface
 {
     public interface IUserManager
     {
-        string CreateUser(User model);
-        UserViewModel GetUser(UserLogin model);
-        string UpdateUser(User model);
+        List<UserVM> GetAllUsers();
+        UserVM GetUserById(int id);
+        bool checkEmailExists(string Email);
+        UserVM UserLogin(UserLogin user);
+        bool RegisterUser(UserVM user);
     }
 }

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using PMS.WebApi.Areas.HelpPage.ModelDescriptions;
+using PMS.WebAPI.Areas.HelpPage.ModelDescriptions;
 
-namespace PMS.WebApi.Areas.HelpPage.Models
+namespace PMS.WebAPI.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.
