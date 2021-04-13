@@ -14,7 +14,7 @@ using HRM.WebAPI.Filter;
 namespace HRM.WebAPI.Controllers
 {
     //[Route("api/[controller]")]
-    [ResponseHeaderFilter]
+    [ResponseHeaderFilter("Suyash Jain")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     public class EmployeeController : ControllerBase

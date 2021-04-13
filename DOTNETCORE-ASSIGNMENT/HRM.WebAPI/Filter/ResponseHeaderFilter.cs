@@ -8,9 +8,14 @@ namespace HRM.WebAPI.Filter
 {
     public class ResponseHeaderFilter : ActionFilterAttribute
     {
+        private string _header;
+        public ResponseHeaderFilter(string header)
+        {
+            _header = header;
+        }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            context.HttpContext.Response.Headers.Add("Created-By: ", "Prince Makwana");
+            context.HttpContext.Response.Headers.Add("Created-By: ", _header);
         }
     }
 }
