@@ -17,6 +17,10 @@ namespace HRM.MVC.Controllers
     [AuthSessionManagement]
     public class EmployeeController : Controller
     {
+        /// <summary>
+        /// Add an Employee Page
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult AddEmployee()
         {
@@ -28,6 +32,10 @@ namespace HRM.MVC.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Dashboard Page
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Dashboard()
         {
             var message = TempData["message"];
@@ -38,6 +46,11 @@ namespace HRM.MVC.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Add an Employee POST method
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult AddEmployee(EmployeeDTO employee)
@@ -63,6 +76,10 @@ namespace HRM.MVC.Controllers
             return RedirectToAction("AddEmployee", "Employee");
         }
 
+        /// <summary>
+        /// EmployeeList Page
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [ResponseCache(Duration = (int)0.5)]
         public IActionResult EmployeeList()
@@ -84,9 +101,15 @@ namespace HRM.MVC.Controllers
                 employees = Enumerable.Empty<EmployeeDTO>();
                 ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
             }
+            ViewData["Message_t"] = "The current time is: " + DateTime.Now.ToString();
             return View(employees);
         }
 
+        /// <summary>
+        /// Details Page
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Details(int? id)
         {
@@ -106,6 +129,11 @@ namespace HRM.MVC.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete Page
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult DeleteEmployee(int? id)
         {
@@ -128,6 +156,11 @@ namespace HRM.MVC.Controllers
             return View(employee);
         }
 
+        /// <summary>
+        /// Delete Method POST action
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteEmployee(int id)
@@ -148,6 +181,11 @@ namespace HRM.MVC.Controllers
             return RedirectToAction("EmployeeList", "Employee");
         }
 
+        /// <summary>
+        /// Edit Employee Page
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult EditEmployee(int? id)
         {
@@ -170,6 +208,11 @@ namespace HRM.MVC.Controllers
             return View(employee);
         }
 
+        /// <summary>
+        /// Get Employee By Id Non Action Method to consume API
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [NonAction]
         public EmployeeDTO GetEmployeeById(int? id)
         {
@@ -194,6 +237,11 @@ namespace HRM.MVC.Controllers
             return employee;
         }
 
+        /// <summary>
+        /// Edit Employee POST Action
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult EditEmployee(EmployeeDTO employee)

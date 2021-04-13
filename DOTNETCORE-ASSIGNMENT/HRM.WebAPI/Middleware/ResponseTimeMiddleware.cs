@@ -20,6 +20,11 @@ namespace HRM.WebAPI.Middleware
             _logger = loggerFactory.CreateLogger<ResponseTimeMiddleware>();
         }
 
+        /// <summary>
+        /// Invoking Middleware
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public Task InvokeAsync(HttpContext context)
         {
             var stopwatch = new Stopwatch();

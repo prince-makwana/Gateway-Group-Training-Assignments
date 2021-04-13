@@ -9,6 +9,9 @@ namespace HRM.DAL
 {
     public class AutoMapping : Profile
     {
+        /// <summary>
+        /// Constructor to instatiniate Automapper Profiles
+        /// </summary>
         public AutoMapping()
         {
             CreateMap<tblEmployees, EmployeeDTO>();

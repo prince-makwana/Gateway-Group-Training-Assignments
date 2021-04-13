@@ -18,6 +18,11 @@ namespace HRM.WebAPI.Controllers
             _authenticateService = authenticateService;
         }
 
+        /// <summary>
+        /// UserLogin POST method API
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("UserLogin")]
         public IActionResult UserLogin([FromBody] UserLogin user)

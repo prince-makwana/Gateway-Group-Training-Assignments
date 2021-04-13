@@ -108,6 +108,7 @@ namespace HRM.MVC.Controllers
         {
             HttpContext.Session.Remove("user");
             HttpContext.Session.Remove("token");
+            TempData["message"] = "Logout Successfully!";
             return RedirectToAction("Login", "Account");
         }
     }

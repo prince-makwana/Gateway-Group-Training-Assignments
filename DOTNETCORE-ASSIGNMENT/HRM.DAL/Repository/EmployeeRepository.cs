@@ -21,6 +21,11 @@ namespace HRM.DAL.Repository
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Add Employee DAL
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public bool AddEmployee(CreateEmployeeDTO model)
         {
             if(model != null)
@@ -33,6 +38,11 @@ namespace HRM.DAL.Repository
             return false;
         }
 
+        /// <summary>
+        /// Delete Employee DAL
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool DeleteEmployee(int id)
         {
             var employee = _context.tblEmployee.Find(id);
@@ -45,6 +55,10 @@ namespace HRM.DAL.Repository
             return false;
         }
 
+        /// <summary>
+        /// Get List of all Employees DAL
+        /// </summary>
+        /// <returns></returns>
         public List<EmployeeDTO> getAllemployees()
         {
             List<EmployeeDTO> employeeList = new List<EmployeeDTO>();
@@ -62,6 +76,11 @@ namespace HRM.DAL.Repository
             return employeeList;
         }
 
+        /// <summary>
+        /// Get Employee By Id DAL
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public EmployeeDTO GetEmployeeById(int id)
         {
             var entity = _context.tblEmployee.Find(id);
@@ -74,6 +93,11 @@ namespace HRM.DAL.Repository
             return null;
         }
 
+        /// <summary>
+        /// Update Employee DAL
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public bool UpdateEmployee(EmployeeDTO model)
         {
             if(model != null)

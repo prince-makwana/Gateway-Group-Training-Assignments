@@ -10,6 +10,12 @@ namespace HRM.DAL
 {
     public static class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Extension of ServiceCollection from DAL
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static IServiceCollection RegisterDatabase(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<DatabaseContext>(d => d.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));

@@ -26,6 +26,10 @@ namespace HRM.WebAPI.Controllers
             _employeeManager = employeeManager;
         }
 
+        /// <summary>
+        /// Get List of all Employees API
+        /// </summary>
+        /// <returns></returns>
         [Route("GetEmployees")]
         [HttpGet]
         public IActionResult GetEmployee()
@@ -41,6 +45,11 @@ namespace HRM.WebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Get Employee By Id API
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [Route("GetEmployeeById/{id}")]
         [HttpGet]
         public IActionResult GetEmployeeById(int id)
@@ -56,6 +65,11 @@ namespace HRM.WebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Add an Employee API
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("AddEmployee")]
         public IActionResult AddEmployee(CreateEmployeeDTO model)
@@ -71,6 +85,11 @@ namespace HRM.WebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Edit an Employee API 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPut]
         [Route("EditEmployee")]
         public IActionResult UpdateEmployee(EmployeeDTO model)
@@ -86,6 +105,11 @@ namespace HRM.WebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete an Employee API
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Route("DeleteEmployee/{id}")]
         public IActionResult DeleteEmployee(int id)
