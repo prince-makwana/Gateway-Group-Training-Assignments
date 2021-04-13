@@ -4,6 +4,15 @@
     ViewData["Title"] = "Dashboard";
 }
 
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}
+
 <div class="text-center">
     <h1>Welcome @HttpContextAccessor.HttpContext.Session.GetString("user")</h1>
 </div>

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM.DAL.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210328113911_DatabaseCreated")]
+    [Migration("20210412184736_DatabaseCreated")]
     partial class DatabaseCreated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

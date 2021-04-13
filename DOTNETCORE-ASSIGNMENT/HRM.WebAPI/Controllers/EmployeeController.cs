@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using HRM.WebAPI.Filter;
 
 namespace HRM.WebAPI.Controllers
 {
     //[Route("api/[controller]")]
+    [ResponseHeaderFilter]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     public class EmployeeController : ControllerBase
@@ -31,7 +33,7 @@ namespace HRM.WebAPI.Controllers
             var employees = _employeeManager.getAllemployees();
             if(employees.Count() != 0)
             {
-                return Ok(JsonSerializer.Serialize(employees));
+                return Ok(employees);
             }
             else
             {
@@ -46,7 +48,7 @@ namespace HRM.WebAPI.Controllers
             var result = _employeeManager.GetEmployeeById(id);
             if (result != null)
             {
-                return Ok(JsonSerializer.Serialize(result));
+                return Ok(result);
             }
             else
             {

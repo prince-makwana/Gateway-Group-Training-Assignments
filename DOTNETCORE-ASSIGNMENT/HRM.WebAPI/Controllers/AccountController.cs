@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace HRM.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
     {

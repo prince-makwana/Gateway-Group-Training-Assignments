@@ -4,6 +4,15 @@
     ViewData["Title"] = "EditEmployee";
 }
 
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}
+
 <h1>EditEmployee</h1>
 
 <hr />

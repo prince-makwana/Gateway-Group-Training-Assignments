@@ -5839,23 +5839,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prince.makwana\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\pdm29\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
       "projectName": "HRM.DAL",
-      "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
-      "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
-      "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\obj\\",
+      "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\HRM.DAL.csproj",
+      "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.DAL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5869,8 +5865,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
-              "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
+            "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+              "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj"
             }
           }
         }

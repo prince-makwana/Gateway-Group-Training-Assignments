@@ -3,6 +3,7 @@ using HRM.BAL.Helper;
 using HRM.BAL.Manager;
 using HRM.WebAPI.AuthenticationService;
 using HRM.WebAPI.JWTConfig;
+using HRM.WebAPI.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -68,7 +69,7 @@ namespace HRM.WebAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
@@ -90,11 +91,14 @@ namespace HRM.WebAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseMiddleware<ResponseTimeMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            loggerFactory.AddFile("Logs/apiLog.txt");
         }
     }
 }

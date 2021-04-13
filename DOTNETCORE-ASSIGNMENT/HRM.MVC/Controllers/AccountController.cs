@@ -1,6 +1,8 @@
-﻿using HRM.Models;
+﻿using HRM.Common.WebClient;
+using HRM.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,16 @@ namespace HRM.MVC.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly ILogger _logger;
+        public AccountController(ILogger<AccountController> logger)
+        {
+            _logger = logger;
+        }
+
+        /// <summary>
+        /// Login Get method to display login page
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Login()
         {
@@ -25,6 +37,11 @@ namespace HRM.MVC.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Login Post method for authentication
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Login(UserLoginDTO model)
         {
@@ -32,6 +49,7 @@ namespace HRM.MVC.Controllers
             {
                 if(await UserAuthentication(new UserLogin { Email = model.Email, Password = model.Password }))
                 {
+                    TempData["message"] = "Login Successfully!";
                     return RedirectToAction("Dashboard", "Employee");
                 }
                 else
@@ -42,43 +60,50 @@ namespace HRM.MVC.Controllers
             }
             else
             {
+                TempData["message"] = "Model State not valid!";
                 return RedirectToAction("Login", "Account");
             }
         }
 
+        /// <summary>
+        /// Non Action method to send Post request to userlogin API for authentication
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         private async Task<bool> UserAuthentication(UserLogin user)
         {
             try
             {
-                using (var client = new HttpClient())
+                _logger.LogInformation("Inside USer Authentication() method");
+                var model = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
+                var postTask = WebClient.httpClient.PostAsync("UserLogin", model);
+                  
+                var result = postTask.Result;
+
+                if (result.IsSuccessStatusCode)
                 {
-                    string postUri = "https://localhost:44367/api/Account/UserLogin";
-
-                    var model = new StringContent(JsonConvert.SerializeObject(user), Encoding.UTF8, "application/json");
-
-                    var postTask = client.PostAsJsonAsync(postUri, user);
-                    var result = postTask.Result;
-
-                    if (result.IsSuccessStatusCode)
-                    {
-                        string response = await result.Content.ReadAsStringAsync();
-                        user = JsonConvert.DeserializeObject<UserLogin>(response);
-                        HttpContext.Session.SetString("token", user.Token);
-                        HttpContext.Session.SetString("user", user.Email);
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                } 
+                    string response = await result.Content.ReadAsStringAsync();
+                    user = JsonConvert.DeserializeObject<UserLogin>(response);
+                    HttpContext.Session.SetString("token", user.Token);
+                    HttpContext.Session.SetString("user", user.Email);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {
+                _logger.LogError("Error at User Authentication in Account Controller " + ex.Message.ToString());
                 return false;
             }
         }
 
+        /// <summary>
+        /// Logout MEthod
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("user");

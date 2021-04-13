@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {}
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {}
   },
   "projects": {
-    "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
         "projectName": "HRM.Models",
-        "projectPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
-        "packagesPath": "C:\\Users\\prince.makwana\\.nuget\\packages\\",
-        "outputPath": "D:\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
+        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\HRM.Models.csproj",
+        "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\DOTNETCORE-ASSIGNMENT\\HRM.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\prince.makwana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

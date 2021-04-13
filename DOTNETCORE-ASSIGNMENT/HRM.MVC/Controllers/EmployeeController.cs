@@ -1,4 +1,5 @@
-﻿using HRM.Models;
+﻿using HRM.Common.WebClient;
+using HRM.Models;
 using HRM.MVC.CustomFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace HRM.MVC.Controllers
 {
@@ -17,11 +20,21 @@ namespace HRM.MVC.Controllers
         [HttpGet]
         public IActionResult AddEmployee()
         {
+            var message = TempData["message"];
+            if (message != null)
+            {
+                ViewBag.Message = message.ToString();
+            }
             return View();
         }
 
         public IActionResult Dashboard()
         {
+            var message = TempData["message"];
+            if (message != null)
+            {
+                ViewBag.Message = message.ToString();
+            }
             return View();
         }
 
@@ -31,22 +44,23 @@ namespace HRM.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                using (var client = new HttpClient())
+                //HTTP POST
+                WebClient.httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("token"));
+                var postTask = WebClient.httpClient.PostAsJsonAsync<EmployeeDTO>("AddEmployee", employee);
+
+
+                var result = postTask.Result;
+
+                if (result.IsSuccessStatusCode)
                 {
-                    string postUri = "https://localhost:44367/AddEmployee";
-
-                    //HTTP POST
-                    var postTask = client.PostAsJsonAsync<EmployeeDTO>(postUri, employee);
-                    var result = postTask.Result;
-
-                    if (result.IsSuccessStatusCode)
-                    {
-                        return RedirectToAction("EmployeeList", "Employee");
-                    }
+                    TempData["message"] = "Added Successfully!";
+                    return RedirectToAction("EmployeeList", "Employee");
                 }
+               
             }
             ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
-            return View(employee);
+            TempData["message"] = "Server Error. Please contact administrator.";
+            return RedirectToAction("AddEmployee", "Employee");
         }
 
         [HttpGet]
@@ -54,24 +68,21 @@ namespace HRM.MVC.Controllers
         public IActionResult EmployeeList()
         {
             IEnumerable<EmployeeDTO> employees = null;
-            using (var client = new HttpClient())
+            
+            //HTTP GET
+            WebClient.httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("token"));
+            var responseTask = WebClient.httpClient.GetAsync("GetEmployees");
+
+            var result = responseTask.Result;
+            if (result.IsSuccessStatusCode)
             {
-                string getUri = "https://localhost:44367/GetEmployees";
-
-                //HTTP GET
-                var responseTask = client.GetAsync(getUri);
-
-                var result = responseTask.Result;
-                if (result.IsSuccessStatusCode)
-                {
-                    var readTask = result.Content.ReadFromJsonAsync<IEnumerable<EmployeeDTO>>();
-                    employees = readTask.Result;
-                }
-                else
-                {
-                    employees = Enumerable.Empty<EmployeeDTO>();
-                    ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
-                }
+                var readTask = result.Content.ReadFromJsonAsync<IEnumerable<EmployeeDTO>>();
+                employees = readTask.Result;
+            }
+            else
+            {
+                employees = Enumerable.Empty<EmployeeDTO>();
+                ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
             }
             return View(employees);
         }
@@ -86,6 +97,11 @@ namespace HRM.MVC.Controllers
             else
             {
                 var employee = GetEmployeeById(id);
+                var message = TempData["message"];
+                if (message != null)
+                {
+                    ViewBag.Message = message.ToString();
+                }
                 return View(employee);
             }
         }
@@ -104,7 +120,11 @@ namespace HRM.MVC.Controllers
             {
                 return NotFound();
             }
-
+            var message = TempData["message"];
+            if (message != null)
+            {
+                ViewBag.Message = message.ToString();
+            }
             return View(employee);
         }
 
@@ -112,19 +132,19 @@ namespace HRM.MVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteEmployee(int id)
         {
-            using (var client = new HttpClient())
+            //HTTP DELETE
+            WebClient.httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("token"));
+            var deleteTask = WebClient.httpClient.DeleteAsync("DeleteEmployee/" + id);
+            
+            var result = deleteTask.Result;
+
+            if (result.IsSuccessStatusCode)
             {
-                var deleteUri = "https://localhost:44367/DeleteEmployee/" + id;
-
-                //HTTP DELETE
-                var deleteTask = client.DeleteAsync(deleteUri);
-                var result = deleteTask.Result;
-
-                if (result.IsSuccessStatusCode)
-                {
-                    return RedirectToAction("EmployeeList", "Employee");
-                }
+                TempData["message"] = "Deleted Successfully!";
+                return RedirectToAction("EmployeeList", "Employee");
             }
+
+            TempData["message"] = "Server Error. Please try after sometime.";
             return RedirectToAction("EmployeeList", "Employee");
         }
 
@@ -142,33 +162,35 @@ namespace HRM.MVC.Controllers
             {
                 return NotFound();
             }
+            var message = TempData["message"];
+            if (message != null)
+            {
+                ViewBag.Message = message.ToString();
+            }
             return View(employee);
         }
 
         [NonAction]
         public EmployeeDTO GetEmployeeById(int? id)
         {
-            EmployeeDTO employee = null;
+            EmployeeDTO employee;
 
-            using (var client = new HttpClient())
+            //HTTP GET
+            WebClient.httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("token"));
+            var responseTask = WebClient.httpClient.GetAsync("GetEmployeeById/" + id);
+
+            var result = responseTask.Result;
+            if (result.IsSuccessStatusCode)
             {
-                string getUri = "https://localhost:44367/GetEmployeeById/" + id;
-
-                //HTTP GET
-                var responseTask = client.GetAsync(getUri);
-
-                var result = responseTask.Result;
-                if (result.IsSuccessStatusCode)
-                {
-                    var readTask = result.Content.ReadFromJsonAsync<EmployeeDTO>();
-                    employee = readTask.Result;
-                }
-                else
-                {
-                    employee = null;
-                    ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
-                }
+                var readTask = result.Content.ReadFromJsonAsync<EmployeeDTO>();
+                employee = readTask.Result;
             }
+            else
+            {
+                employee = null;
+                ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+            }
+            
             return employee;
         }
 
@@ -180,18 +202,15 @@ namespace HRM.MVC.Controllers
             {
                 try
                 {
-                    using (var client = new HttpClient())
+                    //HTTP PUT
+                    WebClient.httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", HttpContext.Session.GetString("token"));
+                    var responseTask = WebClient.httpClient.PutAsJsonAsync("EditEmployee", employee);
+
+                    var result = responseTask.Result;
+                    if (result.IsSuccessStatusCode)
                     {
-                        string putUri = "https://localhost:44367/EditEmployee";
-
-                        //HTTP GET
-                        var responseTask = client.PutAsJsonAsync<EmployeeDTO>(putUri, employee);
-
-                        var result = responseTask.Result;
-                        if (result.IsSuccessStatusCode)
-                        {
-                            return RedirectToAction("EmployeeList", "Employee");
-                        }
+                        TempData["message"] = "Updated Successfully!";
+                        return RedirectToAction("EmployeeList", "Employee");
                     }
                 }
                 catch (DbUpdateConcurrencyException)
@@ -200,6 +219,7 @@ namespace HRM.MVC.Controllers
                 }
             }
             ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+            TempData["message"] = "Server Error. Please contact administrator.";
             return View(employee);
         }
     }
