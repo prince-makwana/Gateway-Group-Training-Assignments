@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
+        "projectName": "ProductConsoleApp",
+        "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
