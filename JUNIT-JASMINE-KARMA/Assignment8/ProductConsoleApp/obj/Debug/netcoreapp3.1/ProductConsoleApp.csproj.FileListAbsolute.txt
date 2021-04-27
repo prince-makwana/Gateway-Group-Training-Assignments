@@ -11,3 +11,16 @@ C:\Users\pdm29\source\repos\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.
 C:\Users\pdm29\source\repos\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.dll
 C:\Users\pdm29\source\repos\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.pdb
 C:\Users\pdm29\source\repos\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.genruntimeconfig.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.exe
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.deps.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.runtimeconfig.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.runtimeconfig.dev.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.dll
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\bin\Debug\netcoreapp3.1\ProductConsoleApp.pdb
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.csprojAssemblyReference.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.AssemblyInfoInputs.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.AssemblyInfo.cs
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.dll
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.pdb
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment8\ProductConsoleApp\obj\Debug\netcoreapp3.1\ProductConsoleApp.genruntimeconfig.cache

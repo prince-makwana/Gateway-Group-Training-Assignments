@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductAppTest\\ProductAppTest.csproj": {}
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductAppTest\\ProductAppTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductAppTest\\ProductAppTest.csproj": {
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductAppTest\\ProductAppTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductAppTest\\ProductAppTest.csproj",
+        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductAppTest\\ProductAppTest.csproj",
         "projectName": "ProductAppTest",
-        "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductAppTest\\ProductAppTest.csproj",
+        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductAppTest\\ProductAppTest.csproj",
         "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductAppTest\\obj\\",
+        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductAppTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {
-                "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj"
+              "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {
+                "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {
+    "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
         "projectName": "ProductConsoleApp",
-        "projectPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
+        "projectPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\ProductConsoleApp.csproj",
         "packagesPath": "C:\\Users\\pdm29\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pdm29\\source\\repos\\Assignment8\\ProductConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\pdm29\\Web Development Projects\\Gateway-Group-Training-Assignments\\JUNIT-JASMINE-KARMA\\Assignment8\\ProductConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pdm29\\AppData\\Roaming\\NuGet\\NuGet.Config",
