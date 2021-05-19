@@ -3,6 +3,7 @@ using Assignment9.Repository;
 using Moq;
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Assignment9.Tests
 {
@@ -48,12 +49,55 @@ namespace Assignment9.Tests
         public void Product_Category_By_Id()
         {
             //Arrange
-            var result = _productRepository.GetProductById(1);
+            var result = _productRepository.GetProducts().Where(p => p.Id == 1).FirstOrDefault();
             //Assert
             Assert.AreEqual("Electronics", result.Category);
         }
 
         [Test]
-        public void Product_
+        public void Product_Category_By_Id_Test_Negative()
+        {
+            //Arrange
+            var result = _productRepository.GetProducts().Where(p => p.Id == 1).FirstOrDefault();
+            //Assert
+            Assert.AreNotEqual("Book", result.Category);
+        }
+
+        [Test]
+        public void Product_Price_GT_2000()
+        {
+            //Arrange
+            var result = _productRepository.GetProducts().Where(p => p.Price > 2000).ToList();
+            //Assert
+            Assert.AreEqual(2, result.Count);
+        }
+
+        [Test]
+        public void Product_Price_GT_2000_Test_Negative()
+        {
+            //Arrange
+            var result = _productRepository.GetProducts().Where(p => p.Price > 2000).ToList();
+            //Assert
+            Assert.AreNotEqual(5, result.Count);
+        }
+
+        [Test]
+        public void Product_Price_GT_2000_Category()
+        {
+            //Arrange
+            var result = _productRepository.GetProducts().Where(p => p.Price == 1000 && p.Category == "Electronics").ToList();
+            //Assert
+            Assert.AreEqual(0, result.Count);
+        }
+
+        [Test]
+        public void Product_Price_GT_2000_Category_Test_Negative()
+        {
+            //Arrange
+            var result = _productRepository.GetProducts().Where(p => p.Price == 1000 && p.Category == "Electronics").ToList();
+            //Assert
+            Assert.AreNotEqual(3, result.Count);
+        }
+
     }
 }

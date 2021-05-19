@@ -1,0 +1,13 @@
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.exe
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.deps.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.runtimeconfig.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.runtimeconfig.dev.json
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.dll
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\bin\Debug\netcoreapp3.1\Assignment9.pdb
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.csprojAssemblyReference.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.AssemblyInfoInputs.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.AssemblyInfo.cs
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.csproj.CoreCompileInputs.cache
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.dll
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.pdb
+C:\Users\pdm29\Web Development Projects\Gateway-Group-Training-Assignments\JUNIT-JASMINE-KARMA\Assignment9\Assignment9\Assignment9\obj\Debug\netcoreapp3.1\Assignment9.genruntimeconfig.cache
